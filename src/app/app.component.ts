@@ -1,5 +1,5 @@
+import { Comment } from '@angular/compiler';
 import { Component } from '@angular/core';
-import {FreeCurrencyService} from './free-currency.service'
 
 @Component({
   selector: 'app-root',
@@ -8,14 +8,10 @@ import {FreeCurrencyService} from './free-currency.service'
 })
 export class AppComponent {
   title = 'living-cost';
-  constructor( private api:FreeCurrencyService){
+  constructor( ){
 
   }
 
-  ngOnInit(){
-    this.api.apiCall().subscribe((data)=>{
-      console.log("get api data",data);
-    })
-  }
+
 
 }
