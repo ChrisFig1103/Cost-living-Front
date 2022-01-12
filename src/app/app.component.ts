@@ -8,10 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'living-cost';
+
+  salario: number = 1234.5;
+
   constructor( ){
 
   }
-
-
 
 }
